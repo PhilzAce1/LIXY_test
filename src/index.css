@@ -11,3 +11,80 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  background: rgb(189, 189, 189);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+}
+h1 {
+  color: white;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  background: #fbfbff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.26);
+}
+@media (max-width: 500px) {
+  table {
+    width: 90%;
+  }
+  h1 {
+    display: none;
+  }
+}
+td,
+th {
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  font-size: 0.8em;
+}
+
+@media (min-width: 500px) {
+  td {
+    font-size: 1em;
+  }
+}
+th {
+  font: normal normal normal 18px/22px Karla;
+  letter-spacing: -0.36px;
+  color: #565d74;
+  background: transparent;
+}
+
+tr {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000003;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+thead,
+th {
+  background: #fbfbff 0% 0% no-repeat padding-box;
+  background: #fbfbff 0% 0% no-repeat padding-box;
+  padding-bottom: 30px;
+  box-shadow: 0 0 0 0;
+}
+tr td:first-child {
+  font-weight: bold;
+  border-radius: 20px 0 0 20px;
+}
+
+tr td:last-child {
+  border-radius: 0 20px 20px 0px;
+}
+th {
+  font-size: 1.2em;
+  font-weight: bold;
+}
