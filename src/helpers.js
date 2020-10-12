@@ -4,7 +4,7 @@ export function genPrimeNumber(limit = 7) {
   }
   const array = [2, 3];
   let i = 5;
-  while (array.length < 10) {
+  while (array.length < limit) {
     // eslint-disable-next-line
     const isPrime = array.every(function (p) {
       return i % p;
@@ -32,6 +32,5 @@ export function genArr(arr) {
     });
     newArr.push(subArr);
   });
-  console.log(newArr);
   return newArr;
 }
